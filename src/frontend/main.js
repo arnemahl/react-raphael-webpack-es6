@@ -1,8 +1,9 @@
 import React from 'react';
 import Raphael from 'webpack-raphael';
 
-import '../sass/raphael.scss';
+import 'sass/raphael.scss';
 
+console.log('Loaded')
 
 class RaphaelRoot extends React.Component {
 
