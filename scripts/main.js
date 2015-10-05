@@ -1,7 +1,7 @@
 import React from 'react';
 import Raphael from 'webpack-raphael';
 
-import '../sass/HelloForm.scss';
+import '../sass/raphael.scss';
 
 
 class RaphaelRoot extends React.Component {
