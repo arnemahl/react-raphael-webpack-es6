@@ -1,8 +1,8 @@
 {
-  "name": "webpack-react",
+  "name": "react-raphael",
   "version": "0.0.1",
-  "description": "A Webpack sample project, configured for ES6 React and SASS",
-  "main": "index.js",
+  "description": "",
+  "main": "./index.js",
   "scripts": {
     "start": "webpack -d --watch --progress",
     "hot": "webpack-dev-server --inline --hot --progress --colors",
