@@ -2,7 +2,7 @@
   "name": "react-raphael",
   "version": "0.0.1",
   "description": "",
-  "main": "./index.js",
+  "main": "./index.html",
   "scripts": {
     "start": "webpack -d --watch --progress",
     "hot": "webpack-dev-server --inline --hot --progress --colors",
