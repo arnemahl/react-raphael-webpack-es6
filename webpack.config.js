@@ -10,7 +10,7 @@ function getEntrySources(sources) {
 module.exports = {
     entry: {
         main: getEntrySources([
-            './scripts/main.js'
+            './src/frontend/scripts/main.js'
         ])
     },
     output: {
