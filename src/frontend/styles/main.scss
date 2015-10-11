@@ -1,10 +1,12 @@
+
 body {
     background: #333;
     color: #fff;
     font: 300 100.1% "Helvetica Neue", Helvetica, "Arial Unicode MS", Arial, sans-serif;
 }
 
-#raphael-paper {
-	margin: 100px;
+#raphael-paper, #react-element {
+    margin: 100px;
     outline: 1px solid #f00;
 }
+

@@ -1,31 +1,27 @@
 import React from 'react';
 import Raphael from 'webpack-raphael';
+import RaphaelRootComponent from 'scripts/raphael/RaphaelRootComponent';
+import ReactRootComponent from 'scripts/react/ReactRootComponent';
 
-import 'styles/raphael.scss';
+import 'styles/main.scss';
 
-class RaphaelRoot extends React.Component {
+function initRaphael() {
+	const paper = new Raphael('raphael-paper', '100%', 500);
 
-	render() {
-		const {paper} = this.props;
+	const raphaelRootComponent = new RaphaelRootComponent(paper);
 
-		const width = paper.canvas.offsetWidth;
-		const height = paper.canvas.offsetHeight;
+	raphaelRootComponent.render();
+}
 
-		const x = width / 2;
-		const y = height / 2;
-		const r = Math.min(width, height) / 4;
+function initReact() {
+	const reactElement = document.getElementById('react-element');
 
-		console.log('Size:', width, '*', height);
+	console.log(reactElement);
 
-		paper.circle(x, y, r)
-			.attr({ stroke: '#fff', fill: '#5aa' });
-
-		// return false;
-	}
+	React.render(<ReactRootComponent />, reactElement);
 }
 
 window.onload = function() {
-	const paper = new Raphael('raphael-paper', '100%', 500);
-
-	new RaphaelRoot({ paper }).render();
+	initRaphael();
+	initReact();
 };
