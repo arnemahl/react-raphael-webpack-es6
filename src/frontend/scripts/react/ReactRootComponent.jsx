@@ -6,7 +6,12 @@ class ReactRootComponent extends React.Component {
 	render() {
 		return (
 			<div className="react-root">
-				This is React.
+				<div className="page-header">
+					This is React.
+				</div>
+				<div className="children">
+					{this.props.children}
+				</div>
 			</div>
 		);
 	}
