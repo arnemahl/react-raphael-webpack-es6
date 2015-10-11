@@ -3,7 +3,6 @@ import Raphael from 'webpack-raphael';
 
 import 'styles/raphael.scss';
 
-
 class RaphaelRoot extends React.Component {
 
 	render() {
@@ -18,7 +17,6 @@ class RaphaelRoot extends React.Component {
 
 		console.log('Size:', width, '*', height);
 
-
 		paper.circle(x, y, r)
 			.attr({ stroke: '#fff', fill: '#5aa' });
 
@@ -29,5 +27,5 @@ class RaphaelRoot extends React.Component {
 window.onload = function() {
 	const paper = new Raphael('raphael-paper', '100%', 500);
 
-	const test = new RaphaelRoot({ paper }).render();
+	new RaphaelRoot({ paper }).render();
 };
