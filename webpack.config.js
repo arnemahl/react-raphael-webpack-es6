@@ -7,7 +7,7 @@ var APP_PATH        = path.join(__dirname),
 module.exports = {
     entry: {
         main: [
-            path.join(FRONTEND_PATH, 'scripts/main.js')
+            path.join(FRONTEND_PATH, 'scripts/main.jsx')
         ]
     },
     output: {
@@ -23,7 +23,15 @@ module.exports = {
     },
     module: {
         loaders: [
-            { test: /\.js$/, loaders: ['react-hot', 'jsx', 'babel'], exclude: /node_modules/ },
+            {
+                test: /\.jsx?$/,
+                loaders: [
+                    'react-hot',
+                    'jsx',
+                    'babel'
+                ],
+                exclude: /node_modules/
+            },
             { test: /\.scss$/, loaders: ['style', 'css', 'sass'] }
         ]
     }
