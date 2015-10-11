@@ -1,31 +1,29 @@
 {
-  "name": "webpack-react",
+  "name": "webpack-react-raphael-es6",
   "version": "0.0.1",
-  "description": "A Webpack sample project, configured for ES6 React and SASS",
-  "main": "index.js",
+  "description": "",
   "scripts": {
     "start": "http-server -p 3000 .",
     "build": "NODE_ENV=production webpack -p",
     "watch": "webpack-dev-server --hot --progress --colors --inline"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:jpetitcolas/webpack-react.git"
-  },
+  "repository": {},
   "keywords": [
     "webpack",
     "react",
-    "ecmascript6",
-    "react-hot-loader",
-    "sass"
+    "raphael",
+    "es6",
+    "ecmascript6"
   ],
-  "author": "Jonathan Petitcolas <petitcolas.jonathan@gmail.com>",
-  "license": "MIT",
+  "author": "",
+  "license": "",
   "bugs": {
-    "url": "https://github.com/jpetitcolas/webpack-react/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/jpetitcolas/webpack-react",
+  "homepage": "",
   "devDependencies": {
+    "babel-core": "^5.3.3",
+    "babel-loader": "^5.0.0",
     "css-loader": "^0.12.0",
     "http-server": "^0.8.0",
     "jsx-loader": "^0.13.2",
@@ -39,8 +37,5 @@
     "webpack-dev-server": "^1.8.2",
     "webpack-raphael": "^2.1.4"
   },
-  "dependencies": {
-    "babel-core": "^5.3.3",
-    "babel-loader": "^5.0.0"
-  }
+  "dependencies": {}
 }
