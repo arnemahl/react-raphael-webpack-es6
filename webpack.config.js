@@ -28,7 +28,8 @@ module.exports = {
                 loaders: [
                     'react-hot',
                     'jsx',
-                    'babel'
+                    'babel',
+                    'eslint'
                 ],
                 exclude: /node_modules/
             },
