@@ -46,15 +46,13 @@ const Test = ({ string }) => (
 // REACT + RAPHAEL
 class RaphaelWrapper extends React.Component {
 
-    // setPaper = () => {
-    setPaper() {
+    setPaper = () => {
         this.setState({
             paper: new Raphael('raphael-paper', '100%', 500)
         });
     }
 
-    // removePaper = () => {
-    removePaper() {
+    removePaper = () => {
         this.state.paper.remove();
     }
 

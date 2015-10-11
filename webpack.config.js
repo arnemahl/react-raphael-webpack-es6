@@ -28,7 +28,7 @@ module.exports = {
                 loaders: [
                     'react-hot',
                     'jsx',
-                    'babel',
+                    'babel?optional[]=es7.classProperties&optional[]=es7.objectRestSpread',
                     'eslint'
                 ],
                 exclude: /node_modules/
