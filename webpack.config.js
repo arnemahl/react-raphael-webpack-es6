@@ -4,20 +4,11 @@ var APP_PATH        = path.join(__dirname),
     DIST_PATH       = path.join(APP_PATH, '/dist/'),
     FRONTEND_PATH   = path.join(APP_PATH, '/src/frontend/');
 
-function getEntrySources(sources) {
-    if (process.env.NODE_ENV !== 'production') {
-        sources.push('webpack-dev-server/client?http://localhost:8080');
-        sources.push('webpack/hot/only-dev-server');
-    }
-
-    return sources;
-}
-
 module.exports = {
     entry: {
-        main: getEntrySources([
+        main: [
             path.join(FRONTEND_PATH, 'scripts/main.js')
-        ])
+        ]
     },
     output: {
         path: DIST_PATH,
