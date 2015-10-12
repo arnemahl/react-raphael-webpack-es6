@@ -17,8 +17,8 @@ class ReactRootComponent extends React.Component {
                     This is React.
                 </div>
                 <div>
-                    <Link to="/sub-page">Link to sub-page</Link>
-                    <Link to="/raphael">Link to Raphaël</Link>
+                    <Link to="/sub-page" activeClassName="my-atctive-class-name">Link to React sub-page</Link>
+                    <Link to="/raphael" activeClassName="my-atctive-class-name">Link to Raphaël sub-page</Link>
                 </div>
                 <div className="children">
                     {this.props.children}
@@ -34,7 +34,7 @@ class Sub extends React.Component {
             <div>
                 This is a Sub-component, shown when navigating to a certain url.
                 <Link to="/">Link to Home-page</Link>
-                <Test string="it works!" />
+                <Test string="Simple JSX works!" />
             </div>
         );
     }
@@ -69,15 +69,21 @@ class RaphaelWrapper extends React.Component {
 
         return (
             <div>
-                Showing raphael.
+                Showing Raphaël sub-page.
                 <Link to="/">Link to Home-page</Link>
-                <RaphaelComponent paper={paper} />
+                <MyRaphaelComponent paper={paper} />
             </div>
         );
     }
 }
 
 class RaphaelComponent extends React.Component {
+    static propTypes = {
+        paper: React.PropTypes.object.isRequired
+    }
+}
+
+class MyRaphaelComponent extends RaphaelComponent {
 
     componentWillUnmount() {
         this.props.paper.clear();

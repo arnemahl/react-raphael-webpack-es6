@@ -1,7 +1,7 @@
 
 /* unvisited link */
 a:link {
-    color: #880000;
+    color: #008888;
 }
 
 /* visited link */
@@ -15,6 +15,9 @@ a:hover {
 }
 
 /* selected link */
-a:active {
-    color: #000088;
+a.my-atctive-class-name {
+    color: #888800;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 15px;
 }
